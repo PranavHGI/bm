@@ -1,0 +1,33 @@
+JAVA VERSION -
+java 21.0.7 2025-04-15 LTS
+
+Step 1:
+mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Step 2:
+cd myapp
+
+myapp
+│-- pom.xml
+└-- src
+    ├-- main
+    │   └-- java
+    │       └-- com/example/App.java
+    └-- test
+        └-- java
+            └-- com/example/AppTest.java
+
+
+Step 3:
+mvn compile
+
+Step 4:
+mvn test
+
+Step 5:
+mvn package
+
+Step 6:
+java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
+
+
